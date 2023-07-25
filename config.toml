@@ -4,7 +4,7 @@ title = 'DHK'
 theme = 'nightfall'
 
 [params]
-avatar = "/profile.jpg"
+avatar = "/profile.png"
 description = "Las0rz, heks & kreks"
 published = true
 readingTime = false

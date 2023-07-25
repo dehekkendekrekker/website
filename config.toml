@@ -1,7 +1,8 @@
-baseURL = 'http://example.org/'
+baseURL = 'http://dehekkendekrekker.nl/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'DHK'
 theme = 'm10c'
 
 [params]
 avatar = "/profile.jpg"
+description = "Las0rz, heks & kreks"

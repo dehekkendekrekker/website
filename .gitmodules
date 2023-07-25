@@ -4,3 +4,6 @@
 [submodule "themes/m10c"]
 	path = themes/m10c
 	url = git@github.com:dehekkendekrekker/hugo-theme-m10c.git
+[submodule "themes/nightfall"]
+	path = themes/nightfall
+	url = https://github.com/LordMathis/hugo-theme-nightfall

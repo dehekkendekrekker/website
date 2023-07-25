@@ -1,8 +1,27 @@
 baseURL = 'http://dehekkendekrekker.nl/'
 languageCode = 'en-us'
 title = 'DHK'
-theme = 'm10c'
+theme = 'nightfall'
 
 [params]
 avatar = "/profile.jpg"
 description = "Las0rz, heks & kreks"
+published = true
+readingTime = false
+author = "DHK"
+user = "null"
+hostname = "dehekkendekrekker.nl"
+
+
+[[params.social]]
+key = 0
+name = "github"
+url = "https://github.com/dehekkendekrekker"
+
+
+
+[menu]
+[[menu.header]]
+name = "posts"
+weight = 0
+url = "/posts"

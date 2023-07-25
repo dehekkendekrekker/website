@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on DHK</title>
+    <link>http://dehekkendekrekker.nl/projects/</link>
+    <description>Recent content in Projects on DHK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 25 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://dehekkendekrekker.nl/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Y1200 Laser cutter</title>
+      <link>http://dehekkendekrekker.nl/projects/laser-cutter/</link>
+      <pubDate>Tue, 25 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://dehekkendekrekker.nl/projects/laser-cutter/</guid>
+      <description>Page documenting the build of a Y1200 100W laser</description>
+    </item>
+    
+  </channel>
+</rss>

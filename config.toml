@@ -5,7 +5,6 @@ theme = 'nightfall'
 
 [params]
 avatar = "/profile.png"
-description = "Las0rz, heks & kreks"
 published = true
 readingTime = false
 author = "DHK"
@@ -25,3 +24,7 @@ url = "https://github.com/dehekkendekrekker"
 name = "posts"
 weight = 0
 url = "/posts"
+[[menu.header]]
+name =  "projects"
+weight = 1
+url = "/projects"

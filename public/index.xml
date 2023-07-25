@@ -13,7 +13,25 @@
       <pubDate>Tue, 25 Jul 2023 03:59:18 +0000</pubDate>
       
       <guid>http://dehekkendekrekker.nl/posts/my-first-post/</guid>
-      <description>Title Yay, this seems to work!</description>
+      <description>Yay, this seems to work!</description>
+    </item>
+    
+    <item>
+      <title>Y1200 Laser cutter</title>
+      <link>http://dehekkendekrekker.nl/projects/laser-cutter/</link>
+      <pubDate>Tue, 25 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://dehekkendekrekker.nl/projects/laser-cutter/</guid>
+      <description>Page documenting the build of a Y1200 100W laser</description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>http://dehekkendekrekker.nl/projects/</link>
+      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://dehekkendekrekker.nl/projects/</guid>
+      <description>Blablabla</description>
     </item>
     
   </channel>

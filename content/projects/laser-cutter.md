@@ -15,7 +15,7 @@ Apart from the written docs, he made a series of
 videos on just how to build the bloody thing. It's called [The laser cutter build series](https://www.youtube.com/watch?v=t4BfQGhhbOQ&list=PLT2B-jiRa_P4blv69gIPtibwSavtNRHN4) and can be found <--- [there](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
 Admittedly, the documentation is a bit sparse. This is because I'm writing this after the machine is already built and a lot of
-build details have been lost in the fog that is my memory. 
+build details have been lost in the fog of time. 
 
 ## Specs
 * Model: Y1200 CO2 laser
@@ -32,7 +32,20 @@ build details have been lost in the fog that is my memory.
 
 
 
+## Pictures in apparent motion
 
+### Beam aligning is not without danger!
+{{< video "https://res.cloudinary.com/direflzw1/video/upload/v1690321965/vid/lasercutter/VID_20230111_182725_hkiclx.mp4" "" >}}
+
+### First run!
+{{< video "https://res.cloudinary.com/direflzw1/video/upload/v1690321965/vid/lasercutter/VID_20230304_154823_yg98qy.mp4" "" >}}
+
+### Lasering a flower-like shape
+{{< video "https://res.cloudinary.com/direflzw1/video/upload/v1690322012/vid/lasercutter/VID_20230310_185350_wjnfle.mp4" "" >}}
+
+
+### Calibrating power vs speed
+{{< video https://res.cloudinary.com/direflzw1/video/upload/v1690327938/vid/lasercutter/VID_20230310_141105_1_kg1t5b.mp4" "" >}}
 
 
 ## Pics or it didn't happen

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>
+MFOS Voltage controlled oscillator | DHK
+</title>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="generator" content="Hugo 0.115.4">
+
+
+<link rel="canonical" href="http://dehekkendekrekker.nl/projects/mfos-vco/" >
+<link href="/sass/main.min.9068ec00287ad17358db81dddd0064cae53beff3ba5bad031c950352ea7d397e.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+    <div class="flexWrapper">
+        <header class="headerWrapper">
+    <div class="header">
+        <div>
+            <a href="http://dehekkendekrekker.nl/">
+                <span class="terminal">null@dehekkendekrekker.nl ~ $</span>
+            </a>
+        </div>
+        <input class="side-menu" type="checkbox" id="side-menu">
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <nav class="headerLinks">
+            <ul>
+                
+                <li>
+                    <a href="http://dehekkendekrekker.nl/projects" title="" >
+                        ~/projects</a>
+                </li>
+                
+                <li>
+                    <a href="http://dehekkendekrekker.nl/posts" title="" >
+                        ~/posts</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="content">
+            <main class="main">
+                
+<div class="postWrapper">
+    <h1>MFOS Voltage controlled oscillator</h1>
+    
+    <section class="postMetadata">
+        <dl>
+            
+            
+            
+            
+                <dt>published</dt>
+                
+                <dd><time datetime="2023-07-25">July 25, 2023</time></dd>
+            
+            
+        </dl>
+    </section>
+    
+    <div>
+        <h2 id="intro">Intro</h2>
+<p>I have been interested in analog synths lately, and since I am a solder junkie in need of a fix, I figured will build one of my own.</p>
+<p>A surprisingly short journey led me to the late Ray Wilson&rsquo;s <a href="http://musicfromouterspace.com/">music from outer space site</a></p>
+<p>This site is a treasure trove of schematics, explanations, alternative part indication and more.</p>
+<p>I picked up his book <a href="https://www.amazon.com/Make-Analog-Synthesizers-Ray-Wilson/dp/1449345220/">Make: Analog synthesizers</a>, which is a good introduction for the budding electronics enthusiast as well as more experienced power users who are just getting into analog.</p>
+<p>Having no idea what VCO mean, or LFO and VCA for that matter a couple of weeks worth of evenings were spent getting my bearings, so how does of all of this work?</p>
+<p>VCO means voltage controlled oscillator and is the part in a synth that makes a sound. So it takes an input voltage, and the oscillator goes bzzz, making a tone. By manipulating the voltage you can change the pitch of the tone!</p>
+<p>So Ray&rsquo;s oscillator is a 1V/Oct VCO, which means that for every volt change, the pitch changes one octave.</p>
+<p>It has some features such as, sawtooth, square, sine and ramp wave shape generation as well as temperature compensation.</p>
+<h2 id="plan">Plan</h2>
+<p>The designs are ready, the parts are ordered. I will make a protoboard version of the VCO first. Then I will make a PCB design,
+have a bunch made, order  more parts and build some more VCO for a litte oomph. Think polyphonic, chords, etc.</p>
+<h2 id="status">Status</h2>
+<p>As of yet, I have transposed his design into KiCAD. This gives me better control over which parts to use and the generation of the bill of materials. I have ordered the parts from mouser, which should ship them soon.</p>
+<h2 id="download-design-files">Download design files</h2>
+<p>The transposed MFOS VCO design as well as other MFOS designs are available on <a href="https://github.com/dehekkendekrekker/synth/">github</a></p>
+<p>Keep in mind that the work is Ray Wilson&rsquo;s IP, on the bottom of the <a href="http://musicfromouterspace.com/index.php">MFOS site</a> he specifies:</p>
+<pre tabindex="0"><code>Please feel free to use the information presented on the MFOS website to the fullest extent for non-commercial uses.
+You can make your own PCBs from the layouts and drawings we provide or design your own if you prefer.
+</code></pre><p>So this also goes for the KiCAD designs that I made. <strong>Non-commercial use only.</strong></p>
+
+    </div>
+</div>
+
+            </main>
+        </div>
+
+
+        <footer class="footer">
+    
+        <span>
+            © 2023 DHK, Built with
+            <a href="https://gohugo.io" class="footerLink">Hugo</a> and
+            <a href="https://github.com/LordMathis/hugo-theme-nightfall" class="footerLink">Nightfall</a> theme
+        </span>
+    
+</footer>
+    </div>
+
+</body>
+
+</html>

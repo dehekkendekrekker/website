@@ -18,5 +18,14 @@ Though it&amp;rsquo;s not completely finished, it is operational.
 Checkout the project page for specs, vids and pics!</description>
     </item>
     
+    <item>
+      <title>MFOS VCO</title>
+      <link>http://dehekkendekrekker.nl/posts/2023-07-25-2/</link>
+      <pubDate>Tue, 25 Jul 2023 03:59:18 +0000</pubDate>
+      
+      <guid>http://dehekkendekrekker.nl/posts/2023-07-25-2/</guid>
+      <description>Building the MFOS VCO and other synth modules. I will be starting with the VCO. See project page</description>
+    </item>
+    
   </channel>
 </rss>

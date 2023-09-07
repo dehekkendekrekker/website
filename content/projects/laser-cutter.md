@@ -85,4 +85,12 @@ build details have been forgotten.
 {{<figure link="https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1690265749/img/lasercutter/gdgxdhbyjnlnhekv9f9s.jpg">}}
 {{<figure link="https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1690265769/img/lasercutter/aswyjldluvd14ntan2fj.jpg">}}
 {{<figure link="https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1690265845/img/lasercutter/zs7tw0p2tfb0xqgnr33k.jpg">}}
+{{<figure link="https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1694083964/img/lasercutter/pfeun7apiotufwisepdh.jpg">}}
+{{<figure link="https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1694083963/img/lasercutter/nvxb4gdpscqnzjfspyiu.jpg">}}
+{{<figure link="https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1694083963/img/lasercutter/jstbigih3zhoqjpulinn.jpg">}}
+{{<figure link="https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1694083963/img/lasercutter/v0tzqnvk3gndkujpqidv.jpg">}}
+{{<figure link="https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1694083962/img/lasercutter/q98uxp3ele3dp0tfhjvb.jpg">}}
+{{<figure link="https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1694083962/img/lasercutter/jewn3peocwxwnxa6xskf.jpg">}}
+
 {{</gallery>}}
+

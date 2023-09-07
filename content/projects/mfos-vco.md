@@ -31,6 +31,8 @@ have a bunch made, order  more parts and build some more VCO for a litte oomph. 
 ## Status
 As of yet, I have transposed his design into KiCAD. This gives me better control over which parts to use and the generation of the bill of materials. I have ordered the parts from mouser, which should ship them soon.
 
+The parts have arrived in the mean time, and once I have found a way to store it all, I will start breadboarding
+
 
 
 ## Download design files
@@ -44,6 +46,13 @@ You can make your own PCBs from the layouts and drawings we provide or design yo
 ```
 
 So this also goes for the KiCAD designs that I made. **Non-commercial use only.**
+
+
+## Pics
+{{<load-photoswipe>}}
+{{<gallery>}}
+{{<figure link="https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1694083845/img/synths/bypl749eawngmhqax5la.jpg">}}
+{{</gallery>}}
 
 
 

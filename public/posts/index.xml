@@ -6,7 +6,36 @@
     <description>Recent content in Posts on DHK</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 25 Jul 2023 03:59:18 +0000</lastBuildDate><atom:link href="http://dehekkendekrekker.nl/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 31 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://dehekkendekrekker.nl/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Breadboarding VCO complete</title>
+      <link>http://dehekkendekrekker.nl/posts/2024-01-31-1/</link>
+      <pubDate>Wed, 31 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://dehekkendekrekker.nl/posts/2024-01-31-1/</guid>
+      <description>The breadboarding is pretty much done. The beasty works on the scope. I have not been able to actually get some audio out of it yet, because I have not built the module that will adapt the signal to something that can be used by an amp or headphones. Also, I do not have an amp yet, nor monitor speaker yet, nor any idea of what to get :)
+Calibration turns out to be a bit of a SoB.</description>
+    </item>
+    
+    <item>
+      <title>Parts arrived!</title>
+      <link>http://dehekkendekrekker.nl/posts/2023-09-07-2/</link>
+      <pubDate>Thu, 07 Sep 2023 04:59:18 +0000</pubDate>
+      
+      <guid>http://dehekkendekrekker.nl/posts/2023-09-07-2/</guid>
+      <description>The parts for the mfos-vco project and other synths have arrived! Now to find a place to store it all.</description>
+    </item>
+    
+    <item>
+      <title>Honey comb bed</title>
+      <link>http://dehekkendekrekker.nl/posts/2023-09-07-1/</link>
+      <pubDate>Thu, 07 Sep 2023 03:59:18 +0000</pubDate>
+      
+      <guid>http://dehekkendekrekker.nl/posts/2023-09-07-1/</guid>
+      <description>I have equipped the laser with a honey comb bed. The previous bed was a rudamentary pin bed made of aluminium profiles and bolts. The distances between the pins was too large, causing the parts to flip and get hit by the laser head. This in turn would move the board, causing mis-alignment and ruining the job.
+The bed consists of 2 60x60 panels. I had to do some custom hacking as the honeycomb comes in a square frame.</description>
+    </item>
+    
     <item>
       <title>Added build information of laser cutter</title>
       <link>http://dehekkendekrekker.nl/posts/2023-07-25-1/</link>

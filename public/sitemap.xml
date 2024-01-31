@@ -2,22 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://dehekkendekrekker.nl/posts/2023-07-25-1/</loc>
-    <lastmod>2023-07-25T03:59:18+00:00</lastmod>
+    <loc>http://dehekkendekrekker.nl/posts/2024-01-31-1/</loc>
+    <lastmod>2024-01-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://dehekkendekrekker.nl/</loc>
+    <lastmod>2024-01-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://dehekkendekrekker.nl/posts/</loc>
+    <lastmod>2024-01-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://dehekkendekrekker.nl/posts/2023-09-07-2/</loc>
+    <lastmod>2023-09-07T04:59:18+00:00</lastmod>
+  </url><url>
+    <loc>http://dehekkendekrekker.nl/posts/2023-09-07-1/</loc>
+    <lastmod>2023-09-07T03:59:18+00:00</lastmod>
+  </url><url>
+    <loc>http://dehekkendekrekker.nl/projects/</loc>
+    <lastmod>2023-09-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://dehekkendekrekker.nl/projects/resicase/</loc>
+    <lastmod>2023-09-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://dehekkendekrekker.nl/posts/2023-07-25-1/</loc>
     <lastmod>2023-07-25T03:59:18+00:00</lastmod>
   </url><url>
     <loc>http://dehekkendekrekker.nl/posts/2023-07-25-2/</loc>
     <lastmod>2023-07-25T03:59:18+00:00</lastmod>
   </url><url>
-    <loc>http://dehekkendekrekker.nl/posts/</loc>
-    <lastmod>2023-07-25T03:59:18+00:00</lastmod>
-  </url><url>
     <loc>http://dehekkendekrekker.nl/projects/mfos-vco/</loc>
-    <lastmod>2023-07-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://dehekkendekrekker.nl/projects/</loc>
     <lastmod>2023-07-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://dehekkendekrekker.nl/projects/laser-cutter/</loc>

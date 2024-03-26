@@ -43,6 +43,9 @@ ever so slightly, the shape distorts. This was giving me a head-ache, and I'm bl
 I have made a PCB design. (available [here](https://github.com/dehekkendekrekker/synth/)). It's just for the VCO at this  moment. 
 When it is ordered, I'll build it and I hope the problem magically goes away.
 
+### Udpdate 2024-03-26
+The design of the PCB is complete and PCB's have been manufactured
+
 
 
 ## Download design files
@@ -77,6 +80,9 @@ So this also goes for the KiCAD designs that I made. **Non-commercial use only.*
 {{<figure link="https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1706683283/img/synths/IMG_20231127_125946_004_btgu9c.jpg">}}
 {{<figure link="https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1706683283/img/synths/IMG_20231125_165120_063_f4ntdb.jpg">}}
 {{<figure link="https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1706683283/img/synths/IMG_20231128_143158_430_nrbzra.jpg">}}
+{{<figure link="https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1711486133/img/synths/IMG_20240326_154445_829_rxr7qo.jpg">}}
+{{<figure link="https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1711486169/img/synths/IMG_20240326_154459_499_nqzht4.jpg">}}
+{{<figure link="https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1711486079/img/synths/IMG_20240326_154508_346_af893a.jpg">}}
 {{</gallery>}}
 
 

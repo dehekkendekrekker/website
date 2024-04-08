@@ -43,9 +43,11 @@ ever so slightly, the shape distorts. This was giving me a head-ache, and I'm bl
 I have made a PCB design. (available [here](https://github.com/dehekkendekrekker/synth/)). It's just for the VCO at this  moment. 
 When it is ordered, I'll build it and I hope the problem magically goes away.
 
-### Udpdate 2024-03-26
+### Update 2024-03-26
 The design of the PCB is complete and PCB's have been manufactured
 
+### Update 2024-04-08
+PCB has been assembled and tested. 
 
 
 ## Download design files
@@ -83,6 +85,18 @@ So this also goes for the KiCAD designs that I made. **Non-commercial use only.*
 {{<figure link="https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1711486133/img/synths/IMG_20240326_154445_829_rxr7qo.jpg">}}
 {{<figure link="https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1711486169/img/synths/IMG_20240326_154459_499_nqzht4.jpg">}}
 {{<figure link="https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1711486079/img/synths/IMG_20240326_154508_346_af893a.jpg">}}
+{{<figure link="https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1711486133/img/synths/IMG_20240326_154445_829_rxr7qo.jpg">}}
+{{<figure link="https://res.cloudinary.com/direflzw1/image/upload/v1712579952/img/synths/IMG_20240326_175937_898_mwuhvj.jpg">}}
+{{<figure link="https://res.cloudinary.com/direflzw1/image/upload/v1712579952/img/synths/IMG_20240326_171701_778_r1c1ji.jpg">}}
+{{<figure link="https://res.cloudinary.com/direflzw1/image/upload/v1712579952/img/synths/IMG_20240331_153507_044_pkgms7.jpg">}}
+{{<figure link="https://res.cloudinary.com/direflzw1/image/upload/v1712579952/img/synths/IMG_20240331_181119_450_st4zhf.jpg">}}
+{{<figure link="https://res.cloudinary.com/direflzw1/image/upload/v1712579953/img/synths/IMG_20240402_171243_033_jv0dlz.jpg">}}
+{{<figure link="https://res.cloudinary.com/direflzw1/image/upload/v1712579954/img/synths/IMG_20240403_152335_232_uhoi9c.jpg">}}
+{{<figure link="https://res.cloudinary.com/direflzw1/image/upload/v1712579955/img/synths/IMG_20240403_152256_668_zezday.jpg">}}
+{{<figure link="https://res.cloudinary.com/direflzw1/image/upload/v1712579954/img/synths/IMG_20240403_152154_149_m0jimf.jpg">}}
+{{<figure link="https://res.cloudinary.com/direflzw1/image/upload/v1712579954/img/synths/IMG_20240403_152053_777_uaqqve.jpg">}}
+{{<figure link="https://res.cloudinary.com/direflzw1/image/upload/v1712579954/img/synths/IMG_20240403_152121_065_aagyao.jpg">}}
+
 {{</gallery>}}
 
 

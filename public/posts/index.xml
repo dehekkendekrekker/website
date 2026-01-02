@@ -2,59 +2,67 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on DHK</title>
-    <link>http://dehekkendekrekker.nl/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on DHK</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 31 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://dehekkendekrekker.nl/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 21 Apr 2024 23:31:58 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Let there be sound!</title>
+      <link>http://localhost:1313/posts/2024-04-21-1/</link>
+      <pubDate>Sun, 21 Apr 2024 23:31:58 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024-04-21-1/</guid>
+      <description>&lt;p&gt;Haha, it works! I took some time today to fabricate a quick circuit that can drive a speaker or headphone without blowing anything up or distort the signal.&#xA;Some breadboarding and soldering later, I hooked up my head phones to hear for the first the the actual sound of the VCO.&lt;/p&gt;&#xA;&lt;h2 id=&#34;volume-control&#34;&gt;Volume control&lt;/h2&gt;&#xA;&#xA;&lt;link rel=&#34;stylesheet&#34; href=http://localhost:1313/css/hugo-easy-gallery.css /&gt;&#xA;&lt;div class=&#34;box&#34; &gt;&#xA;  &lt;figure  itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;&#xA;    &lt;div class=&#34;img&#34;&gt;&#xA;      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://res.cloudinary.com/direflzw1/image/upload/w_0.1/v1713743288/img/synths/IMG_20240421_134445_046_cr7hov.jpg&#34; /&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;a href=&#34;https://res.cloudinary.com/direflzw1/image/upload/w_0.1/v1713743288/img/synths/IMG_20240421_134445_046_cr7hov.jpg&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;&#xA;  &lt;/figure&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;This is a simple, but effective circuit that allows you to take the output signal of a module which has some 10V peak to peak amplitude and&#xA;turn it down to the mV range so it can be used for headphones / line equipment. There a pot that controls the voltage at the + input of the opamp.&#xA;The opamp is configured as a buffer which means it will try to get the same voltage between output and ground as there is between + and - on the opamp.&#xA;It does this by driving current into the headphone. Effectively this circuit decouples the headphones from the VCO so that the VCO does not need to&#xA;supply the driving current which would degrade the signal.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>PCB assembly VCO prototype complete</title>
+      <link>http://localhost:1313/posts/2024-04-08-1/</link>
+      <pubDate>Mon, 08 Apr 2024 12:12:54 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024-04-08-1/</guid>
+      <description>&lt;p&gt;The past two weeks I spent off and on assembling the PCB in small increments. It was fun to so some soldering after so long. Also, the jig, the solder holder,&#xA;the extraction unit and the head mounted magnifying glasses are a huge help. Working on electronics with good equipment is such must, as they solve the problems of:&#xA;a wobbly PCB, not being able to see the joints well, etc. These things don&amp;rsquo;t really stand out when you&amp;rsquo;re starting out, but get really old when you well, get older :)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Circuit board design complete</title>
+      <link>http://localhost:1313/posts/2024-03-26-1/</link>
+      <pubDate>Tue, 26 Mar 2024 20:33:19 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024-03-26-1/</guid>
+      <description>&lt;p&gt;The circuitboard layout design of the VCO has been completed. My tool of choice to design circuitboard is KiCAD.&#xA;I have evaluated Altium Designer, but as far as I can see, for simple designs KiCAD fits the bill. The only thing&#xA;KiCAD is missing, but Altium has, is a way to link part to a manufacturer and supplier so one can quickly select parts,&#xA;see stock,find alternatives etc.&lt;/p&gt;&#xA;&lt;p&gt;However, I digress. The design is available &lt;a href=&#34;https://github.com/dehekkendekrekker/synth&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Breadboarding VCO complete</title>
-      <link>http://dehekkendekrekker.nl/posts/2024-01-31-1/</link>
+      <link>http://localhost:1313/posts/2024-01-31-1/</link>
       <pubDate>Wed, 31 Jan 2024 00:00:00 +0000</pubDate>
-      
-      <guid>http://dehekkendekrekker.nl/posts/2024-01-31-1/</guid>
-      <description>The breadboarding is pretty much done. The beasty works on the scope. I have not been able to actually get some audio out of it yet, because I have not built the module that will adapt the signal to something that can be used by an amp or headphones. Also, I do not have an amp yet, nor monitor speaker yet, nor any idea of what to get :)
-Calibration turns out to be a bit of a SoB.</description>
+      <guid>http://localhost:1313/posts/2024-01-31-1/</guid>
+      <description>&lt;p&gt;The breadboarding is pretty much done. The beasty works on the scope. I have not been able to actually get some audio out of it yet,&#xA;because I have not built the module that will adapt the signal to something that can be used by an amp or headphones.&#xA;Also, I do not have an amp yet, nor monitor speaker yet, nor any idea of what to get :)&lt;/p&gt;&#xA;&lt;p&gt;Calibration turns out to be a bit of a SoB. It is hard to get a good wave-form that will persist. When I tap one of the pots,&#xA;ever so slightly, the shape distorts. This was giving me a head-ache, and I&amp;rsquo;m blaming the breadboard.&#xA;I have made a PCB design. (available &lt;a href=&#34;https://github.com/dehekkendekrekker/synth/&#34;&gt;here&lt;/a&gt;). It&amp;rsquo;s just for the VCO at this  moment.&#xA;When it is ordered, I&amp;rsquo;ll build it and I hope the problem magically goes away.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Parts arrived!</title>
-      <link>http://dehekkendekrekker.nl/posts/2023-09-07-2/</link>
+      <link>http://localhost:1313/posts/2023-09-07-2/</link>
       <pubDate>Thu, 07 Sep 2023 04:59:18 +0000</pubDate>
-      
-      <guid>http://dehekkendekrekker.nl/posts/2023-09-07-2/</guid>
-      <description>The parts for the mfos-vco project and other synths have arrived! Now to find a place to store it all.</description>
+      <guid>http://localhost:1313/posts/2023-09-07-2/</guid>
+      <description>&lt;p&gt;The parts for the &lt;a href=&#34;http://localhost:1313/projects/mfos-vco/&#34;&gt;mfos-vco&lt;/a&gt; project and other synths have arrived! Now to find a place to store it all.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&#xA;&#xA;&#xA;  &#xA;&#xA;&#xA;&lt;script src=&#34;https://code.jquery.com/jquery-1.12.4.min.js&#34; integrity=&#34;sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt;&#xA;&lt;script src=http://localhost:1313/js/load-photoswipe.js&gt;&lt;/script&gt;&#xA;&#xA;&#xA;&lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css&#34; integrity=&#34;sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=&#34; crossorigin=&#34;anonymous&#34; /&gt;&#xA;&lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css&#34; integrity=&#34;sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=&#34; crossorigin=&#34;anonymous&#34; /&gt;&#xA;&lt;script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js&#34; integrity=&#34;sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt;&#xA;&lt;script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js&#34; integrity=&#34;sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt;&#xA;&#xA;&#xA;&lt;div class=&#34;pswp&#34; tabindex=&#34;-1&#34; role=&#34;dialog&#34; aria-hidden=&#34;true&#34;&gt;&#xA;&#xA;&lt;div class=&#34;pswp__bg&#34;&gt;&lt;/div&gt;&#xA;&#xA;&lt;div class=&#34;pswp__scroll-wrap&#34;&gt;&#xA;    &#xA;    &lt;div class=&#34;pswp__container&#34;&gt;&#xA;      &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;&#xA;      &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;&#xA;      &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;    &#xA;    &lt;div class=&#34;pswp__ui pswp__ui--hidden&#34;&gt;&#xA;    &lt;div class=&#34;pswp__top-bar&#34;&gt;&#xA;      &#xA;      &lt;div class=&#34;pswp__counter&#34;&gt;&lt;/div&gt;&#xA;      &lt;button class=&#34;pswp__button pswp__button--close&#34; title=&#34;Close (Esc)&#34;&gt;&lt;/button&gt;&#xA;      &lt;button class=&#34;pswp__button pswp__button--share&#34; title=&#34;Share&#34;&gt;&lt;/button&gt;&#xA;      &lt;button class=&#34;pswp__button pswp__button--fs&#34; title=&#34;Toggle fullscreen&#34;&gt;&lt;/button&gt;&#xA;      &lt;button class=&#34;pswp__button pswp__button--zoom&#34; title=&#34;Zoom in/out&#34;&gt;&lt;/button&gt;&#xA;      &#xA;      &#xA;      &lt;div class=&#34;pswp__preloader&#34;&gt;&#xA;        &lt;div class=&#34;pswp__preloader__icn&#34;&gt;&#xA;          &lt;div class=&#34;pswp__preloader__cut&#34;&gt;&#xA;            &lt;div class=&#34;pswp__preloader__donut&#34;&gt;&lt;/div&gt;&#xA;          &lt;/div&gt;&#xA;        &lt;/div&gt;&#xA;      &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div class=&#34;pswp__share-modal pswp__share-modal--hidden pswp__single-tap&#34;&gt;&#xA;      &lt;div class=&#34;pswp__share-tooltip&#34;&gt;&lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;button class=&#34;pswp__button pswp__button--arrow--left&#34; title=&#34;Previous (arrow left)&#34;&gt;&#xA;    &lt;/button&gt;&#xA;    &lt;button class=&#34;pswp__button pswp__button--arrow--right&#34; title=&#34;Next (arrow right)&#34;&gt;&#xA;    &lt;/button&gt;&#xA;    &lt;div class=&#34;pswp__caption&#34;&gt;&#xA;      &lt;div class=&#34;pswp__caption__center&#34;&gt;&lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition&#34; itemscope itemtype=&#34;http://schema.org/ImageGallery&#34;&gt;&#xA;&#x9;  &#xA;&#xA;&lt;link rel=&#34;stylesheet&#34; href=http://localhost:1313/css/hugo-easy-gallery.css /&gt;&#xA;&lt;div class=&#34;box&#34; &gt;&#xA;  &lt;figure  itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;&#xA;    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1694083845/img/synths/bypl749eawngmhqax5la.jpg&#39;);&#34;&gt;&#xA;      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1694083845/img/synths/bypl749eawngmhqax5la.jpg&#34; /&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;a href=&#34;https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1694083845/img/synths/bypl749eawngmhqax5la.jpg&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;&#xA;  &lt;/figure&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&#xA;&lt;/div&gt;&#xA;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Honey comb bed</title>
-      <link>http://dehekkendekrekker.nl/posts/2023-09-07-1/</link>
+      <link>http://localhost:1313/posts/2023-09-07-1/</link>
       <pubDate>Thu, 07 Sep 2023 03:59:18 +0000</pubDate>
-      
-      <guid>http://dehekkendekrekker.nl/posts/2023-09-07-1/</guid>
-      <description>I have equipped the laser with a honey comb bed. The previous bed was a rudamentary pin bed made of aluminium profiles and bolts. The distances between the pins was too large, causing the parts to flip and get hit by the laser head. This in turn would move the board, causing mis-alignment and ruining the job.
-The bed consists of 2 60x60 panels. I had to do some custom hacking as the honeycomb comes in a square frame.</description>
+      <guid>http://localhost:1313/posts/2023-09-07-1/</guid>
+      <description>&lt;p&gt;I have equipped the laser with a honey comb bed. The previous bed was a rudamentary pin bed made of aluminium profiles&#xA;and bolts. The distances between the pins was too large, causing the parts to flip and get hit by the laser head.&#xA;This in turn would move the board, causing mis-alignment and ruining the job.&lt;/p&gt;&#xA;&lt;p&gt;The bed consists of 2 60x60 panels. I had to do some custom hacking as the honeycomb comes in a square frame.&#xA;So, I had to remove one side of the frame. Fortunately, the frame is rivetted, which can be drilled out. I repurposed&#xA;some of the aluminium profiles to act as a support under the honey-comb where the mesh meets, so it won&amp;rsquo;t get all wobbly&#xA;and maintains solidness.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Added build information of laser cutter</title>
-      <link>http://dehekkendekrekker.nl/posts/2023-07-25-1/</link>
+      <link>http://localhost:1313/posts/2023-07-25-1/</link>
       <pubDate>Tue, 25 Jul 2023 03:59:18 +0000</pubDate>
-      
-      <guid>http://dehekkendekrekker.nl/posts/2023-07-25-1/</guid>
-      <description>For the past year I&amp;rsquo;ve been working on a laser cutter.
-Though it&amp;rsquo;s not completely finished, it is operational.
-Checkout the project page for specs, vids and pics!</description>
+      <guid>http://localhost:1313/posts/2023-07-25-1/</guid>
+      <description>&lt;p&gt;For the past year I&amp;rsquo;ve been working on a laser cutter.&lt;/p&gt;&#xA;&lt;p&gt;Though it&amp;rsquo;s not completely finished, it is operational.&lt;/p&gt;&#xA;&lt;p&gt;Checkout the &lt;a href=&#34;http://localhost:1313/projects/laser-cutter&#34;&gt;project page&lt;/a&gt; for specs, vids and pics!&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>MFOS VCO</title>
-      <link>http://dehekkendekrekker.nl/posts/2023-07-25-2/</link>
+      <link>http://localhost:1313/posts/2023-07-25-2/</link>
       <pubDate>Tue, 25 Jul 2023 03:59:18 +0000</pubDate>
-      
-      <guid>http://dehekkendekrekker.nl/posts/2023-07-25-2/</guid>
-      <description>Building the MFOS VCO and other synth modules. I will be starting with the VCO. See project page</description>
+      <guid>http://localhost:1313/posts/2023-07-25-2/</guid>
+      <description>&lt;p&gt;Building the &lt;a href=&#34;http://musicfromouterspace.com/&#34;&gt;MFOS&lt;/a&gt; VCO and other synth modules. I will be starting with the VCO. See &lt;a href=&#34;http://localhost:1313/projects/mfos-vco&#34;&gt;project page&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

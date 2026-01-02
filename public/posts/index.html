@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <title>
 Posts | DHK
 </title>
@@ -9,12 +9,12 @@ Posts | DHK
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="generator" content="Hugo 0.115.4">
+<meta name="generator" content="Hugo 0.153.3">
 
 
-<link rel="canonical" href="http://dehekkendekrekker.nl/posts/" >
-  <link href="http://dehekkendekrekker.nl/posts/index.xml" rel="alternate" type="application/rss+xml" title="DHK" >
-  <link href="http://dehekkendekrekker.nl/posts/index.xml" rel="feed" type="application/rss+xml" title="DHK" >
+<link rel="canonical" href="http://localhost:1313/posts/" >
+  <link href="http://localhost:1313/posts/index.xml" rel="alternate" type="application/rss+xml" title="DHK" >
+  <link href="http://localhost:1313/posts/index.xml" rel="feed" type="application/rss+xml" title="DHK" >
 <link href="/sass/main.min.9068ec00287ad17358db81dddd0064cae53beff3ba5bad031c950352ea7d397e.css" rel="stylesheet">
 
 
@@ -27,7 +27,7 @@ Posts | DHK
         <header class="headerWrapper">
     <div class="header">
         <div>
-            <a href="http://dehekkendekrekker.nl/">
+            <a href="http://localhost:1313/">
                 <span class="terminal">null@dehekkendekrekker.nl ~ $</span>
             </a>
         </div>
@@ -37,12 +37,12 @@ Posts | DHK
             <ul>
                 
                 <li>
-                    <a href="http://dehekkendekrekker.nl/projects" title="" >
+                    <a href="http://localhost:1313/projects" title="" >
                         ~/projects</a>
                 </li>
                 
                 <li>
-                    <a href="http://dehekkendekrekker.nl/posts" title="" >
+                    <a href="http://localhost:1313/posts" title="" >
                         ~/posts</a>
                 </li>
                 
@@ -66,7 +66,82 @@ Posts | DHK
     <div>
         
 
-        <a href="http://dehekkendekrekker.nl/posts/2024-01-31-1/">
+        <a href="http://localhost:1313/posts/2024-04-21-1/">
+            
+            <div class="postListItem" role="listitem">
+                <div class="postHeader">
+                    <span class="postTitle">Let there be sound!</span>
+                    
+                    <time class="postDate" datetime="2024-04-21">April 21, 2024</time>
+                </div>
+                <div class="postExcerpt">
+                    <p><p>Haha, it works! I took some time today to fabricate a quick circuit that can drive a speaker or headphone without blowing anything up or distort the signal.
+Some breadboarding and soldering later, I hooked up my head phones to hear for the first the the actual sound of the VCO.</p>
+<h2 id="volume-control">Volume control</h2>
+
+<link rel="stylesheet" href=/css/hugo-easy-gallery.css />
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="https://res.cloudinary.com/direflzw1/image/upload/w_0.1/v1713743288/img/synths/IMG_20240421_134445_046_cr7hov.jpg" />
+    </div>
+    <a href="https://res.cloudinary.com/direflzw1/image/upload/w_0.1/v1713743288/img/synths/IMG_20240421_134445_046_cr7hov.jpg" itemprop="contentUrl"></a>
+  </figure>
+</div>
+
+<p>This is a simple, but effective circuit that allows you to take the output signal of a module which has some 10V peak to peak amplitude and
+turn it down to the mV range so it can be used for headphones / line equipment. There a pot that controls the voltage at the + input of the opamp.
+The opamp is configured as a buffer which means it will try to get the same voltage between output and ground as there is between + and - on the opamp.
+It does this by driving current into the headphone. Effectively this circuit decouples the headphones from the VCO so that the VCO does not need to
+supply the driving current which would degrade the signal.</p></p>
+                </div>
+            </div>
+        </a>
+
+
+        
+
+        <a href="http://localhost:1313/posts/2024-04-08-1/">
+            
+            <div class="postListItem" role="listitem">
+                <div class="postHeader">
+                    <span class="postTitle">PCB assembly VCO prototype complete</span>
+                    
+                    <time class="postDate" datetime="2024-04-08">April 8, 2024</time>
+                </div>
+                <div class="postExcerpt">
+                    <p><p>The past two weeks I spent off and on assembling the PCB in small increments. It was fun to so some soldering after so long. Also, the jig, the solder holder,
+the extraction unit and the head mounted magnifying glasses are a huge help. Working on electronics with good equipment is such must, as they solve the problems of:
+a wobbly PCB, not being able to see the joints well, etc. These things don&rsquo;t really stand out when you&rsquo;re starting out, but get really old when you well, get older :)</p></p>
+                </div>
+            </div>
+        </a>
+
+
+        
+
+        <a href="http://localhost:1313/posts/2024-03-26-1/">
+            
+            <div class="postListItem" role="listitem">
+                <div class="postHeader">
+                    <span class="postTitle">Circuit board design complete</span>
+                    
+                    <time class="postDate" datetime="2024-03-26">March 26, 2024</time>
+                </div>
+                <div class="postExcerpt">
+                    <p><p>The circuitboard layout design of the VCO has been completed. My tool of choice to design circuitboard is KiCAD.
+I have evaluated Altium Designer, but as far as I can see, for simple designs KiCAD fits the bill. The only thing
+KiCAD is missing, but Altium has, is a way to link part to a manufacturer and supplier so one can quickly select parts,
+see stock,find alternatives etc.</p>
+<p>However, I digress. The design is available <a href="https://github.com/dehekkendekrekker/synth">here</a>.</p></p>
+                </div>
+            </div>
+        </a>
+
+
+        
+
+        <a href="http://localhost:1313/posts/2024-01-31-1/">
             
             <div class="postListItem" role="listitem">
                 <div class="postHeader">
@@ -75,8 +150,13 @@ Posts | DHK
                     <time class="postDate" datetime="2024-01-31">January 31, 2024</time>
                 </div>
                 <div class="postExcerpt">
-                    <p>The breadboarding is pretty much done. The beasty works on the scope. I have not been able to actually get some audio out of it yet, because I have not built the module that will adapt the signal to something that can be used by an amp or headphones. Also, I do not have an amp yet, nor monitor speaker yet, nor any idea of what to get :)
-Calibration turns out to be a bit of a SoB.</p>
+                    <p><p>The breadboarding is pretty much done. The beasty works on the scope. I have not been able to actually get some audio out of it yet,
+because I have not built the module that will adapt the signal to something that can be used by an amp or headphones.
+Also, I do not have an amp yet, nor monitor speaker yet, nor any idea of what to get :)</p>
+<p>Calibration turns out to be a bit of a SoB. It is hard to get a good wave-form that will persist. When I tap one of the pots,
+ever so slightly, the shape distorts. This was giving me a head-ache, and I&rsquo;m blaming the breadboard.
+I have made a PCB design. (available <a href="https://github.com/dehekkendekrekker/synth/">here</a>). It&rsquo;s just for the VCO at this  moment.
+When it is ordered, I&rsquo;ll build it and I hope the problem magically goes away.</p></p>
                 </div>
             </div>
         </a>
@@ -84,7 +164,7 @@ Calibration turns out to be a bit of a SoB.</p>
 
         
 
-        <a href="http://dehekkendekrekker.nl/posts/2023-09-07-2/">
+        <a href="http://localhost:1313/posts/2023-09-07-2/">
             
             <div class="postListItem" role="listitem">
                 <div class="postHeader">
@@ -93,7 +173,87 @@ Calibration turns out to be a bit of a SoB.</p>
                     <time class="postDate" datetime="2023-09-07">September 7, 2023</time>
                 </div>
                 <div class="postExcerpt">
-                    <p>The parts for the mfos-vco project and other synths have arrived! Now to find a place to store it all.</p>
+                    <p><p>The parts for the <a href="http://localhost:1313/projects/mfos-vco/">mfos-vco</a> project and other synths have arrived! Now to find a place to store it all.</p>
+<p>
+
+
+
+  
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src=/js/load-photoswipe.js></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous"></script>
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+
+
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+	  
+
+<link rel="stylesheet" href=/css/hugo-easy-gallery.css />
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img" style="background-image: url('https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1694083845/img/synths/bypl749eawngmhqax5la.jpg');">
+      <img itemprop="thumbnail" src="https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1694083845/img/synths/bypl749eawngmhqax5la.jpg" />
+    </div>
+    <a href="https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1694083845/img/synths/bypl749eawngmhqax5la.jpg" itemprop="contentUrl"></a>
+  </figure>
+</div>
+
+
+</div>
+</p></p>
                 </div>
             </div>
         </a>
@@ -101,7 +261,7 @@ Calibration turns out to be a bit of a SoB.</p>
 
         
 
-        <a href="http://dehekkendekrekker.nl/posts/2023-09-07-1/">
+        <a href="http://localhost:1313/posts/2023-09-07-1/">
             
             <div class="postListItem" role="listitem">
                 <div class="postHeader">
@@ -110,8 +270,13 @@ Calibration turns out to be a bit of a SoB.</p>
                     <time class="postDate" datetime="2023-09-07">September 7, 2023</time>
                 </div>
                 <div class="postExcerpt">
-                    <p>I have equipped the laser with a honey comb bed. The previous bed was a rudamentary pin bed made of aluminium profiles and bolts. The distances between the pins was too large, causing the parts to flip and get hit by the laser head. This in turn would move the board, causing mis-alignment and ruining the job.
-The bed consists of 2 60x60 panels. I had to do some custom hacking as the honeycomb comes in a square frame.</p>
+                    <p><p>I have equipped the laser with a honey comb bed. The previous bed was a rudamentary pin bed made of aluminium profiles
+and bolts. The distances between the pins was too large, causing the parts to flip and get hit by the laser head.
+This in turn would move the board, causing mis-alignment and ruining the job.</p>
+<p>The bed consists of 2 60x60 panels. I had to do some custom hacking as the honeycomb comes in a square frame.
+So, I had to remove one side of the frame. Fortunately, the frame is rivetted, which can be drilled out. I repurposed
+some of the aluminium profiles to act as a support under the honey-comb where the mesh meets, so it won&rsquo;t get all wobbly
+and maintains solidness.</p></p>
                 </div>
             </div>
         </a>
@@ -119,7 +284,7 @@ The bed consists of 2 60x60 panels. I had to do some custom hacking as the honey
 
         
 
-        <a href="http://dehekkendekrekker.nl/posts/2023-07-25-1/">
+        <a href="http://localhost:1313/posts/2023-07-25-1/">
             
             <div class="postListItem" role="listitem">
                 <div class="postHeader">
@@ -128,9 +293,9 @@ The bed consists of 2 60x60 panels. I had to do some custom hacking as the honey
                     <time class="postDate" datetime="2023-07-25">July 25, 2023</time>
                 </div>
                 <div class="postExcerpt">
-                    <p>For the past year I&rsquo;ve been working on a laser cutter.
-Though it&rsquo;s not completely finished, it is operational.
-Checkout the project page for specs, vids and pics!</p>
+                    <p><p>For the past year I&rsquo;ve been working on a laser cutter.</p>
+<p>Though it&rsquo;s not completely finished, it is operational.</p>
+<p>Checkout the <a href="/projects/laser-cutter">project page</a> for specs, vids and pics!</p></p>
                 </div>
             </div>
         </a>
@@ -138,7 +303,7 @@ Checkout the project page for specs, vids and pics!</p>
 
         
 
-        <a href="http://dehekkendekrekker.nl/posts/2023-07-25-2/">
+        <a href="http://localhost:1313/posts/2023-07-25-2/">
             
             <div class="postListItem" role="listitem">
                 <div class="postHeader">
@@ -147,7 +312,7 @@ Checkout the project page for specs, vids and pics!</p>
                     <time class="postDate" datetime="2023-07-25">July 25, 2023</time>
                 </div>
                 <div class="postExcerpt">
-                    <p>Building the MFOS VCO and other synth modules. I will be starting with the VCO. See project page</p>
+                    <p><p>Building the <a href="http://musicfromouterspace.com/">MFOS</a> VCO and other synth modules. I will be starting with the VCO. See <a href="/projects/mfos-vco">project page</a></p></p>
                 </div>
             </div>
         </a>
@@ -165,7 +330,7 @@ Checkout the project page for specs, vids and pics!</p>
         <footer class="footer">
     
         <span>
-            © 2024 DHK, Built with
+            © 2026 DHK, Built with
             <a href="https://gohugo.io" class="footerLink">Hugo</a> and
             <a href="https://github.com/LordMathis/hugo-theme-nightfall" class="footerLink">Nightfall</a> theme
         </span>

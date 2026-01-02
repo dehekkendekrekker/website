@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>
+Let there be sound! | DHK
+</title>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="generator" content="Hugo 0.153.3">
+
+
+<link rel="canonical" href="http://localhost:1313/posts/2024-04-21-1/" >
+<link href="/sass/main.min.9068ec00287ad17358db81dddd0064cae53beff3ba5bad031c950352ea7d397e.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+    <div class="flexWrapper">
+        <header class="headerWrapper">
+    <div class="header">
+        <div>
+            <a href="http://localhost:1313/">
+                <span class="terminal">null@dehekkendekrekker.nl ~ $</span>
+            </a>
+        </div>
+        <input class="side-menu" type="checkbox" id="side-menu">
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <nav class="headerLinks">
+            <ul>
+                
+                <li>
+                    <a href="http://localhost:1313/projects" title="" >
+                        ~/projects</a>
+                </li>
+                
+                <li>
+                    <a href="http://localhost:1313/posts" title="" >
+                        ~/posts</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="content">
+            <main class="main">
+                
+<div class="postWrapper">
+    <h1>Let there be sound!</h1>
+    
+    <section class="postMetadata">
+        <dl>
+            
+            
+            
+            
+                <dt>published</dt>
+                
+                <dd><time datetime="2024-04-21">April 21, 2024</time></dd>
+            
+            
+        </dl>
+    </section>
+    
+    <div>
+        <p>Haha, it works! I took some time today to fabricate a quick circuit that can drive a speaker or headphone without blowing anything up or distort the signal.
+Some breadboarding and soldering later, I hooked up my head phones to hear for the first the the actual sound of the VCO.</p>
+<h2 id="volume-control">Volume control</h2>
+
+<link rel="stylesheet" href=/css/hugo-easy-gallery.css />
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="https://res.cloudinary.com/direflzw1/image/upload/w_0.1/v1713743288/img/synths/IMG_20240421_134445_046_cr7hov.jpg" />
+    </div>
+    <a href="https://res.cloudinary.com/direflzw1/image/upload/w_0.1/v1713743288/img/synths/IMG_20240421_134445_046_cr7hov.jpg" itemprop="contentUrl"></a>
+  </figure>
+</div>
+
+<p>This is a simple, but effective circuit that allows you to take the output signal of a module which has some 10V peak to peak amplitude and
+turn it down to the mV range so it can be used for headphones / line equipment. There a pot that controls the voltage at the + input of the opamp.
+The opamp is configured as a buffer which means it will try to get the same voltage between output and ground as there is between + and - on the opamp.
+It does this by driving current into the headphone. Effectively this circuit decouples the headphones from the VCO so that the VCO does not need to
+supply the driving current which would degrade the signal.</p>
+<p>Generally, I&rsquo;m very happy with the result, except it sounds rather raw. I think it&rsquo;s kind of cool, just not sure if its supposed to sound like this. I imagined the sinewave to sound purer, cleaner? Maybe there are some overtones that are not supposed to be there. I remember having used a 22pF cap somewhere instead of a 10pF. Perhaps, that&rsquo;s the culprit? Time will tell &hellip;</p>
+<h2 id="square-wave-with-pwm-at-the-end">Square wave with PWM at the end</h2>
+<figure class="audio">
+<audio controls preload="metadata">
+<source src="https://res.cloudinary.com/direflzw1/video/upload/v1713742763/audio/sqr_nonif2.mp4" >
+</audio>
+</figure>
+
+<h2 id="sine-wave">Sine wave</h2>
+<figure class="audio">
+<audio controls preload="metadata">
+<source src="https://res.cloudinary.com/direflzw1/video/upload/v1713742763/audio/sin_kicsdu.mp4" >
+</audio>
+</figure>
+
+<h2 id="triangle-wave">Triangle wave</h2>
+<figure class="audio">
+<audio controls preload="metadata">
+<source src="https://res.cloudinary.com/direflzw1/video/upload/v1713742764/audio/tri_zv0iiv.mp4" >
+</audio>
+</figure>
+
+<h2 id="sawtooth-wave">Sawtooth wave</h2>
+<figure class="audio">
+<audio controls preload="metadata">
+<source src="https://res.cloudinary.com/direflzw1/video/upload/v1713742763/audio/saw_l8vqqf.mp4" >
+</audio>
+</figure>
+
+<h2 id="jumper-wire-storage">Jumper wire storage</h2>
+<p>This is how I store my jumper wires now. I stuck the soft part of a bunch of velcro onto a board and used the hard part to stick the wires down.</p>
+
+
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="https://res.cloudinary.com/direflzw1/image/upload/w_0.1/v1713743289/img/synths/IMG_20240421_141921_483_hnca6y.jpg" />
+    </div>
+    <a href="https://res.cloudinary.com/direflzw1/image/upload/w_0.1/v1713743289/img/synths/IMG_20240421_141921_483_hnca6y.jpg" itemprop="contentUrl"></a>
+  </figure>
+</div>
+
+
+    </div>
+</div>
+
+            </main>
+        </div>
+
+
+        <footer class="footer">
+    
+        <span>
+            © 2026 DHK, Built with
+            <a href="https://gohugo.io" class="footerLink">Hugo</a> and
+            <a href="https://github.com/LordMathis/hugo-theme-nightfall" class="footerLink">Nightfall</a> theme
+        </span>
+    
+</footer>
+    </div>
+
+</body>
+
+</html>

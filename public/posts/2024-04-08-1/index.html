@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>
+PCB assembly VCO prototype complete | DHK
+</title>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="generator" content="Hugo 0.153.3">
+
+
+<link rel="canonical" href="http://localhost:1313/posts/2024-04-08-1/" >
+<link href="/sass/main.min.9068ec00287ad17358db81dddd0064cae53beff3ba5bad031c950352ea7d397e.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+    <div class="flexWrapper">
+        <header class="headerWrapper">
+    <div class="header">
+        <div>
+            <a href="http://localhost:1313/">
+                <span class="terminal">null@dehekkendekrekker.nl ~ $</span>
+            </a>
+        </div>
+        <input class="side-menu" type="checkbox" id="side-menu">
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <nav class="headerLinks">
+            <ul>
+                
+                <li>
+                    <a href="http://localhost:1313/projects" title="" >
+                        ~/projects</a>
+                </li>
+                
+                <li>
+                    <a href="http://localhost:1313/posts" title="" >
+                        ~/posts</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="content">
+            <main class="main">
+                
+<div class="postWrapper">
+    <h1>PCB assembly VCO prototype complete</h1>
+    
+    <section class="postMetadata">
+        <dl>
+            
+            
+            
+            
+                <dt>published</dt>
+                
+                <dd><time datetime="2024-04-08">April 8, 2024</time></dd>
+            
+            
+        </dl>
+    </section>
+    
+    <div>
+        <p>The past two weeks I spent off and on assembling the PCB in small increments. It was fun to so some soldering after so long. Also, the jig, the solder holder,
+the extraction unit and the head mounted magnifying glasses are a huge help. Working on electronics with good equipment is such must, as they solve the problems of:
+a wobbly PCB, not being able to see the joints well, etc. These things don&rsquo;t really stand out when you&rsquo;re starting out, but get really old when you well, get older :)</p>
+<p>Anyway, the board is a success with one real error and some minor issues in the design and while assembling. The error consists of the fact that the PN4891&rsquo;s packages is of type Drain-Source-Gate (DSG). This means that pin 1 is drain, 2 is source and 3 is gate. I missed this detail when selecting a model in Kicad. I just picked a JFET model, without considering the pinout. The usual is DGS, so the source and drain were swapped.</p>
+<p>This resulted in the VCO not showing any output at all. So, I fired up the scope and placed a probe at points with an expected output. When I saw a flat line, I knew the problem had to be higher up the hierarchy. At one point I touched all the parts and the JFET was running a little too warm, which made me suspect the problem was with the component. Lo and behold, after replacing the part the VCO showed some improvement.</p>
+<p>I had to twist and turn some of the trimpots to get the right shape for SIN and to get the signals biased correctly, but apart from SQR everything looked fine.</p>
+<p>I mistakenly used a 47K ohm resistor instead of a 4.7K resistor for R36 resulting in the amplitude of the squarewave to be reduced by apparently a factor 10. Desoldered the part, replaced with the correct value and also SQR behaves a-ok.</p>
+<p>I have fixed the error and made some space for proper molex KK connectors and some cosmetic changes in revision 2 of the board which is now in production at dirtypcbs.</p>
+<p>The VCO can produce waves with a frequency of  ~2Hz. - ~60 kHz. The waveshape is rubbish at these high frequencies, but human&rsquo;s won&rsquo;t be able to hear them anyway.
+The VCO can get even lower than 1.9322Hz, but the frequency counter is having trouble measuring the frequency at such low frequencies.</p>
+<p>In the triangle waveform you can see a bit of a pronounced glitch at the bottom of each period. I have use a 22pF cap instead of a 10pF, since I didn&rsquo;t have a 10pF. Not sure if this is audible, but I have since ordered 10pF caps and will replace nonetheless. The other triangle waveform is measured at 60kHz and looks a bit distorted.</p>
+<p>The irony is that though this is a device intended to produce sound, I have not listened to it. I have verified operation on the scope only. One of these days I&rsquo;ll build a small device with a volume knob and a headphone connector to have a listen.</p>
+<p>There is still some tuning and testing to be done, but not bad overall.</p>
+<p>
+
+
+
+  
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src=/js/load-photoswipe.js></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous"></script>
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+
+
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+	  
+
+<link rel="stylesheet" href=/css/hugo-easy-gallery.css />
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img" style="background-image: url('https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1711486133/img/synths/IMG_20240326_154445_829_rxr7qo.jpg');">
+      <img itemprop="thumbnail" src="https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1711486133/img/synths/IMG_20240326_154445_829_rxr7qo.jpg" />
+    </div>
+    <a href="https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1711486133/img/synths/IMG_20240326_154445_829_rxr7qo.jpg" itemprop="contentUrl"></a>
+  </figure>
+</div>
+
+
+
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img" style="background-image: url('https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1712579952/img/synths/IMG_20240326_175937_898_mwuhvj.jpg');">
+      <img itemprop="thumbnail" src="https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1712579952/img/synths/IMG_20240326_175937_898_mwuhvj.jpg" />
+    </div>
+    <a href="https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1712579952/img/synths/IMG_20240326_175937_898_mwuhvj.jpg" itemprop="contentUrl"></a>
+  </figure>
+</div>
+
+
+
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img" style="background-image: url('https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1712579952/img/synths/IMG_20240326_171701_778_r1c1ji.jpg');">
+      <img itemprop="thumbnail" src="https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1712579952/img/synths/IMG_20240326_171701_778_r1c1ji.jpg" />
+    </div>
+    <a href="https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1712579952/img/synths/IMG_20240326_171701_778_r1c1ji.jpg" itemprop="contentUrl"></a>
+  </figure>
+</div>
+
+
+
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img" style="background-image: url('https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1712579952/img/synths/IMG_20240331_153507_044_pkgms7.jpg');">
+      <img itemprop="thumbnail" src="https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1712579952/img/synths/IMG_20240331_153507_044_pkgms7.jpg" />
+    </div>
+    <a href="https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1712579952/img/synths/IMG_20240331_153507_044_pkgms7.jpg" itemprop="contentUrl"></a>
+  </figure>
+</div>
+
+
+
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img" style="background-image: url('https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1712579952/img/synths/IMG_20240331_181119_450_st4zhf.jpg');">
+      <img itemprop="thumbnail" src="https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1712579952/img/synths/IMG_20240331_181119_450_st4zhf.jpg" />
+    </div>
+    <a href="https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1712579952/img/synths/IMG_20240331_181119_450_st4zhf.jpg" itemprop="contentUrl"></a>
+  </figure>
+</div>
+
+
+
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img" style="background-image: url('https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1712579953/img/synths/IMG_20240402_171243_033_jv0dlz.jpg');">
+      <img itemprop="thumbnail" src="https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1712579953/img/synths/IMG_20240402_171243_033_jv0dlz.jpg" />
+    </div>
+    <a href="https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1712579953/img/synths/IMG_20240402_171243_033_jv0dlz.jpg" itemprop="contentUrl"></a>
+  </figure>
+</div>
+
+
+
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img" style="background-image: url('https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1712579954/img/synths/IMG_20240403_152335_232_uhoi9c.jpg');">
+      <img itemprop="thumbnail" src="https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1712579954/img/synths/IMG_20240403_152335_232_uhoi9c.jpg" />
+    </div>
+    <a href="https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1712579954/img/synths/IMG_20240403_152335_232_uhoi9c.jpg" itemprop="contentUrl"></a>
+  </figure>
+</div>
+
+
+
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img" style="background-image: url('https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1712579955/img/synths/IMG_20240403_152256_668_zezday.jpg');">
+      <img itemprop="thumbnail" src="https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1712579955/img/synths/IMG_20240403_152256_668_zezday.jpg" />
+    </div>
+    <a href="https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1712579955/img/synths/IMG_20240403_152256_668_zezday.jpg" itemprop="contentUrl"></a>
+  </figure>
+</div>
+
+
+
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img" style="background-image: url('https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1712579954/img/synths/IMG_20240403_152154_149_m0jimf.jpg');">
+      <img itemprop="thumbnail" src="https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1712579954/img/synths/IMG_20240403_152154_149_m0jimf.jpg" />
+    </div>
+    <a href="https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1712579954/img/synths/IMG_20240403_152154_149_m0jimf.jpg" itemprop="contentUrl"></a>
+  </figure>
+</div>
+
+
+
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img" style="background-image: url('https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1712579954/img/synths/IMG_20240403_152053_777_uaqqve.jpg');">
+      <img itemprop="thumbnail" src="https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1712579954/img/synths/IMG_20240403_152053_777_uaqqve.jpg" />
+    </div>
+    <a href="https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1712579954/img/synths/IMG_20240403_152053_777_uaqqve.jpg" itemprop="contentUrl"></a>
+  </figure>
+</div>
+
+
+
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img" style="background-image: url('https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1712579954/img/synths/IMG_20240403_152121_065_aagyao.jpg');">
+      <img itemprop="thumbnail" src="https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1712579954/img/synths/IMG_20240403_152121_065_aagyao.jpg" />
+    </div>
+    <a href="https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1712579954/img/synths/IMG_20240403_152121_065_aagyao.jpg" itemprop="contentUrl"></a>
+  </figure>
+</div>
+
+
+</div>
+</p>
+
+    </div>
+</div>
+
+            </main>
+        </div>
+
+
+        <footer class="footer">
+    
+        <span>
+            © 2026 DHK, Built with
+            <a href="https://gohugo.io" class="footerLink">Hugo</a> and
+            <a href="https://github.com/LordMathis/hugo-theme-nightfall" class="footerLink">Nightfall</a> theme
+        </span>
+    
+</footer>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>
+IEEE1800 2023 Tests | DHK
+</title>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="generator" content="Hugo 0.153.3">
+
+
+<link rel="canonical" href="http://localhost:1313/projects/ieee1800-2023-tests/" >
+<link href="/sass/main.min.9068ec00287ad17358db81dddd0064cae53beff3ba5bad031c950352ea7d397e.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+    <div class="flexWrapper">
+        <header class="headerWrapper">
+    <div class="header">
+        <div>
+            <a href="http://localhost:1313/">
+                <span class="terminal">null@dehekkendekrekker.nl ~ $</span>
+            </a>
+        </div>
+        <input class="side-menu" type="checkbox" id="side-menu">
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <nav class="headerLinks">
+            <ul>
+                
+                <li>
+                    <a href="http://localhost:1313/projects" title="" >
+                        ~/projects</a>
+                </li>
+                
+                <li>
+                    <a href="http://localhost:1313/posts" title="" >
+                        ~/posts</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="content">
+            <main class="main">
+                
+<div class="postWrapper">
+    <h1>IEEE1800 2023 Tests</h1>
+    
+    <section class="postMetadata">
+        <dl>
+            
+            
+            
+            
+                <dt>published</dt>
+                
+                <dd><time datetime="2026-01-02">January 2, 2026</time></dd>
+            
+            
+        </dl>
+    </section>
+    
+    <div>
+        <h2 id="introduction">Introduction</h2>
+<p>In general, tools are considered good if they do what they are supposed to do. If this is not the case,
+this could lead to very expensive problems. One of the industries where this is the case is the semiconductor industry.</p>
+<p>Unlike software, where an error may be corrected by issuing a patch, an error in an ASIC is irreversible and requires complete re-manufacturing.</p>
+<p>Since respinning a design may cost millions of dollars, errors in silicon should be avoided.</p>
+<p>Errors in silicon may be introduced in multiple ways, but this article will only consider errors that are introduced through errors that exist in tooling.</p>
+<h2 id="tool-errors-in-asic-design">Tool errors in ASIC Design</h2>
+<p>ASIC engineering is a complex process that involves multiple steps. In each step, part of the design process is completed and handed off to the next. Along the way, the result is tested for errors. Issues are fixed, leading ultimately to a (hopefully) working product.</p>
+<p>However if a <em>tool</em> contains an error, the consequences cascade. If an HDL parser contains an error that corrupts the translation from HDL to intermediate language, the corruption propagates through every subsequent step. More generally, any tool error in the flow compromises all downstream results.</p>
+<p>As such, the quality of the end product depends heavily on the quality of the tools used in its production.</p>
+<h2 id="systemverilog-and-open-source-tooling">SystemVerilog and Open-Source Tooling</h2>
+<p>One of the steps in the production process is HDL design. This step involves describing the circuit in a Hardware Description Language (HDL). SystemVerilog is one such HDL.</p>
+<p>SystemVerilog was originally standardized in IEEE1800-2005 and was merged with base Verilog in IEEE1800-2009. It has since then been updated in 2012, 2017 and most recently in 2023.</p>
+<p>Not only is SystemVerilog useful for synthesis of designs, but also for verification thereof using the language component SystemVerilog Assertions (SVA).</p>
+<p>The IEEE1800 standard is open, and a collection of open-source tools have emerged that parse the language to provide several functions. To highlight a few; Verilator parses the language to transform a design into C++ code, so that it may be compiled and run on a general purpose computer. Slang offers functionality that parses the language into an abstract syntax tree (AST). yosys-slang uses slang to transform the AST into RTLIL so it can be used by yosys to synthesise a design.</p>
+<h2 id="current-testing-landscape">Current testing landscape</h2>
+<p>As concluded before, a tool needs to be reliable. Tool developers address this by equipping their tools with test cases. Furthermore, the sv-tests project by the Chips Alliance intends to find all supported and missing SystemVerilog features in various Verilog tools.</p>
+<p>They have published a dashboard in which the current state of support for different Verilog/SystemVerilog features is shown.</p>
+<h2 id="problems-with-existing-test-coverage">Problems with existing Test Coverage</h2>
+<p>Though great work has been done by everyone involved to raise the quality of the tools, a number of problems exist:</p>
+<ol>
+<li>The sv-tests project tries to achieve their goal by integrating tests from contributors. The test-framework has been established, now it&rsquo;s up to the community to fill in the gaps. This occurs on an ad-hoc, decentralized basis. The author is unaware if any concentrated effort taking place to fill in the gaps in the test-suite.</li>
+</ol>
+<p>The test-suite of the tools themselves and that of sv-tests do not necessarily line up. slang claims to fully support the IEEE1800-2023 standard, however sv-tests does not cover this standard. Without having reviewed the test suite of the tools itself, one can only assume slang&rsquo;s claim is true. A generic set of tests that can be applied to all tools that implement IEEE1800 standards is therefore very valuable.</p>
+<ol start="2">
+<li>
+<p>The sv-tests suite of tests contains gaps. A cursory review of the implemented tests showed that for SVA, the test suites do not fully cover all features. Some features have no tests at all, such as Checkers. Note that this is but a sample, and may not generalize to the coverage of the rest of the language.</p>
+</li>
+<li>
+<p>The dashboard of the sv-tests suite shows false positives. Some tools appear to pass tests, but upon closer inspection they do not.
+In this particular case, the worst scenario is likely a disappointed user that selected the tool based on the information the dashboard provided.</p>
+</li>
+</ol>
+<p>
+
+
+
+  
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src=/js/load-photoswipe.js></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous"></script>
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+
+
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+	  
+
+<link rel="stylesheet" href=/css/hugo-easy-gallery.css />
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img" style="background-image: url('https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1767390569/ieee1800-2023-tests/false_positives_ckdcho.png');">
+      <img itemprop="thumbnail" src="https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1767390569/ieee1800-2023-tests/false_positives_ckdcho.png" />
+    </div>
+    <a href="https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1767390569/ieee1800-2023-tests/false_positives_ckdcho.png" itemprop="contentUrl"></a>
+  </figure>
+</div>
+
+
+
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img" style="background-image: url('https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1767390571/ieee1800-2023-tests/false_positive2_hktu8g.png');">
+      <img itemprop="thumbnail" src="https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1767390571/ieee1800-2023-tests/false_positive2_hktu8g.png" />
+    </div>
+    <a href="https://res.cloudinary.com/direflzw1/image/upload/w_0.5/v1767390571/ieee1800-2023-tests/false_positive2_hktu8g.png" itemprop="contentUrl"></a>
+  </figure>
+</div>
+
+
+</div>
+</p>
+<p>As we will see, false positives can have more serious consequences.</p>
+<h2 id="a-concrete-example-false-positives-in-practice">A Concrete Example: False Positives in Practice</h2>
+<p>In this particular issue of yosys-slang, <a href="https://github.com/povik/yosys-slang/issues/77">https://github.com/povik/yosys-slang/issues/77</a>, a problem is described where intended use of the tool resulted in a false positive.
+A testcase was written that should have resulted in a failure, but instead resulted in a pass. The AST was converted to invalid RTLIL that failed to trigger an error and as a result, the test passed.</p>
+<p>According to the IEEE1800 standard, a simple_immediate_assert_statement embedded in an initial_construct was parsed erroneously.</p>
+<p>The tool supports tests for assert in an assert_comb block, which is a simple_immediate_assert_statement in an always_construct.</p>
+<p>False positives at this level are more dangerous. The assert statement is explicitly designed to test designs. A passing assert that should have failed leads
+to a corruption propagating through subsequent steps.</p>
+<p>In this case, the first line of defense has failed. Unsupported language did not result in an error when used.</p>
+<h2 id="the-context-problem">The context problem</h2>
+<p>However, the second line of defense has also failed. simple_immediate_assert_statements are part of chapter 16.3 of the IEEE1800 standard.
+sv-tests does not currently provide any tests for this language feature. This is an example that shows that gaps in test coverage fail to detect problems in tools, with dire consequences.</p>
+<p>However, there is another problem. As the yosys-slang issue revealed, language features do not occur in isolation. Merely testing whether an assert statement is parsed correctly is not enough. In this example, an assert statement in an initial block behaves differently from an assert statement in an always_comb block.</p>
+<p>A project like sv-tests, apart from its stated mission, should therefore also consider how the language features are tested in context.
+Failure to do so will lead, again, to false positives. Even if 16.3 contained a test for assert, if it does not take its context into account, it would appear that a tool passing the test supports the feature. This, however, would only be true in the tested case.</p>
+<p>Summarizing, the following problems exist:</p>
+<ol>
+<li>The tool&rsquo;s own test suites do not always catch all problems, which could lead to false positives when used.</li>
+<li>The overarching test framework sv-tests contains gaps in its coverage of the IEEE1800 standard.</li>
+<li>Filling in these gaps depends on the community, which is slow and arbitrary.</li>
+<li>Language features need to be tested in context.</li>
+</ol>
+<h2 id="proposed-approach">Proposed approach</h2>
+<p>In order to address these problems, a different way of generating test cases is required. Due to previous experience with fuzzing techniques to find bugs in software,the author will explore applying these techniques to test case generation.</p>
+<p>Concretely, the following approach will be explored:</p>
+<ol>
+<li>The IEEE1800-2023 grammar elements will be copied from the standard to a text format.</li>
+<li>A tool will be built that takes the BNF grammar and produces a graph that describes the standard.</li>
+<li>From this graph, meaningful paths will be extracted and converted to HDL test cases.</li>
+</ol>
+<p>The repository can be found here: <a href="https://github.com/dehekkendekrekker/ieee1800-2023-tests/tree/master">https://github.com/dehekkendekrekker/ieee1800-2023-tests/tree/master</a></p>
+<p>Daniel Attevelt</p>
+
+    </div>
+</div>
+
+            </main>
+        </div>
+
+
+        <footer class="footer">
+    
+        <span>
+            © 2026 DHK, Built with
+            <a href="https://gohugo.io" class="footerLink">Hugo</a> and
+            <a href="https://github.com/LordMathis/hugo-theme-nightfall" class="footerLink">Nightfall</a> theme
+        </span>
+    
+</footer>
+    </div>
+
+</body>
+
+</html>

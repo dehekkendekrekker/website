@@ -2,50 +2,53 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://dehekkendekrekker.nl/</loc>
+    <lastmod>2026-01-02T14:19:26+00:00</lastmod>
+  </url><url>
+    <loc>http://dehekkendekrekker.nl/projects/ieee1800-2023-tests/</loc>
+    <lastmod>2026-01-02T14:19:26+00:00</lastmod>
+  </url><url>
+    <loc>http://dehekkendekrekker.nl/projects/</loc>
+    <lastmod>2026-01-02T14:19:26+00:00</lastmod>
+  </url><url>
+    <loc>http://dehekkendekrekker.nl/posts/2024-04-21-1/</loc>
     <lastmod>2024-04-21T23:31:58+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2024-04-21-1/</loc>
+    <loc>http://dehekkendekrekker.nl/posts/</loc>
     <lastmod>2024-04-21T23:31:58+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-04-21T23:31:58+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/2024-04-08-1/</loc>
+    <loc>http://dehekkendekrekker.nl/posts/2024-04-08-1/</loc>
     <lastmod>2024-04-08T12:12:54+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2024-03-26-1/</loc>
+    <loc>http://dehekkendekrekker.nl/posts/2024-03-26-1/</loc>
     <lastmod>2024-03-26T20:33:19+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2024-01-31-1/</loc>
+    <loc>http://dehekkendekrekker.nl/posts/2024-01-31-1/</loc>
     <lastmod>2024-01-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2023-09-07-2/</loc>
+    <loc>http://dehekkendekrekker.nl/posts/2023-09-07-2/</loc>
     <lastmod>2023-09-07T04:59:18+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2023-09-07-1/</loc>
+    <loc>http://dehekkendekrekker.nl/posts/2023-09-07-1/</loc>
     <lastmod>2023-09-07T03:59:18+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/</loc>
+    <loc>http://dehekkendekrekker.nl/projects/resicase/</loc>
     <lastmod>2023-09-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/resicase/</loc>
-    <lastmod>2023-09-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/2023-07-25-1/</loc>
+    <loc>http://dehekkendekrekker.nl/posts/2023-07-25-1/</loc>
     <lastmod>2023-07-25T03:59:18+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2023-07-25-2/</loc>
+    <loc>http://dehekkendekrekker.nl/posts/2023-07-25-2/</loc>
     <lastmod>2023-07-25T03:59:18+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/mfos-vco/</loc>
+    <loc>http://dehekkendekrekker.nl/projects/mfos-vco/</loc>
     <lastmod>2023-07-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/laser-cutter/</loc>
+    <loc>http://dehekkendekrekker.nl/projects/laser-cutter/</loc>
     <lastmod>2023-07-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>http://dehekkendekrekker.nl/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>http://dehekkendekrekker.nl/tags/</loc>
   </url>
 </urlset>

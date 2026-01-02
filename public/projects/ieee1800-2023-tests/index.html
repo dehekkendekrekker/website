@@ -85,10 +85,10 @@ this could lead to very expensive problems. One of the industries where this is 
 <p>One of the steps in the production process is HDL design. This step involves describing the circuit in a Hardware Description Language (HDL). SystemVerilog is one such HDL.</p>
 <p>SystemVerilog was originally standardized in IEEE1800-2005 and was merged with base Verilog in IEEE1800-2009. It has since then been updated in 2012, 2017 and most recently in 2023.</p>
 <p>Not only is SystemVerilog useful for synthesis of designs, but also for verification thereof using the language component SystemVerilog Assertions (SVA).</p>
-<p>The IEEE1800 standard is open, and a collection of open-source tools have emerged that parse the language to provide several functions. To highlight a few; Verilator parses the language to transform a design into C++ code, so that it may be compiled and run on a general purpose computer. Slang offers functionality that parses the language into an abstract syntax tree (AST). yosys-slang uses slang to transform the AST into RTLIL so it can be used by yosys to synthesise a design.</p>
+<p>The IEEE1800 standard is open, and a collection of open-source tools have emerged that parse the language to provide several functions. To highlight a few; <a href="https://www.veripool.org/verilator/">Verilator</a> parses the language to transform a design into C++ code, so that it may be compiled and run on a general purpose computer. <a href="https://sv-lang.com/">Slang</a> offers functionality that parses the language into an abstract syntax tree (AST). <a href="https://github.com/povik/yosys-slang">yosys-slang</a> uses slang to transform the AST into RTLIL so it can be used by <a href="https://github.com/YosysHQ/yosys/">yosys</a> to synthesise a design.</p>
 <h2 id="current-testing-landscape">Current testing landscape</h2>
-<p>As concluded before, a tool needs to be reliable. Tool developers address this by equipping their tools with test cases. Furthermore, the sv-tests project by the Chips Alliance intends to find all supported and missing SystemVerilog features in various Verilog tools.</p>
-<p>They have published a dashboard in which the current state of support for different Verilog/SystemVerilog features is shown.</p>
+<p>As concluded before, a tool needs to be reliable. Tool developers address this by equipping their tools with test cases. Furthermore, the <a href="https://github.com/chipsalliance/sv-tests">sv-tests</a> project by the Chips Alliance intends to find all supported and missing SystemVerilog features in various Verilog tools.</p>
+<p>They have published a <a href="https://chipsalliance.github.io/sv-tests-results/">dashboard</a> in which the current state of support for different Verilog/SystemVerilog features is shown.</p>
 <h2 id="problems-with-existing-test-coverage">Problems with existing Test Coverage</h2>
 <p>Though great work has been done by everyone involved to raise the quality of the tools, a number of problems exist:</p>
 <ol>
@@ -199,8 +199,8 @@ In this particular case, the worst scenario is likely a disappointed user that s
 <h2 id="a-concrete-example-false-positives-in-practice">A Concrete Example: False Positives in Practice</h2>
 <p>In this particular issue of yosys-slang, <a href="https://github.com/povik/yosys-slang/issues/77">https://github.com/povik/yosys-slang/issues/77</a>, a problem is described where intended use of the tool resulted in a false positive.
 A testcase was written that should have resulted in a failure, but instead resulted in a pass. The AST was converted to invalid RTLIL that failed to trigger an error and as a result, the test passed.</p>
-<p>According to the IEEE1800 standard, a simple_immediate_assert_statement embedded in an initial_construct was parsed erroneously.</p>
-<p>The tool supports tests for assert in an assert_comb block, which is a simple_immediate_assert_statement in an always_construct.</p>
+<p>According to the IEEE1800 standard, a <code>simple_immediate_assert_statement</code> embedded in an <code>initial_construct</code> was parsed erroneously.</p>
+<p>The tool supports tests for assert in an <code>assert_comb</code> block, which is a <code>simple_immediate_assert_statement</code> in an always_construct.</p>
 <p>False positives at this level are more dangerous. The assert statement is explicitly designed to test designs. A passing assert that should have failed leads
 to a corruption propagating through subsequent steps.</p>
 <p>In this case, the first line of defense has failed. Unsupported language did not result in an error when used.</p>
@@ -226,7 +226,6 @@ Failure to do so will lead, again, to false positives. Even if 16.3 contained a 
 <li>From this graph, meaningful paths will be extracted and converted to HDL test cases.</li>
 </ol>
 <p>The repository can be found here: <a href="https://github.com/dehekkendekrekker/ieee1800-2023-tests/tree/master">https://github.com/dehekkendekrekker/ieee1800-2023-tests/tree/master</a></p>
-<p>Daniel Attevelt</p>
 
     </div>
 </div>

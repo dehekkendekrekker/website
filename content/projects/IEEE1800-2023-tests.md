@@ -3,7 +3,7 @@ title = "IEEE1800 2023 Tests"
 summary = "A comprehensive test framework for SystemVerilog IEEE1800-2023"
 date = 2026-01-02T14:19:26Z
 draft = false
-author = "DHK"
+author = "Daniel Attevelt"
 +++
 
 ## Introduction
@@ -31,12 +31,12 @@ SystemVerilog was originally standardized in IEEE1800-2005 and was merged with b
 
 Not only is SystemVerilog useful for synthesis of designs, but also for verification thereof using the language component SystemVerilog Assertions (SVA).
 
-The IEEE1800 standard is open, and a collection of open-source tools have emerged that parse the language to provide several functions. To highlight a few; Verilator parses the language to transform a design into C++ code, so that it may be compiled and run on a general purpose computer. Slang offers functionality that parses the language into an abstract syntax tree (AST). yosys-slang uses slang to transform the AST into RTLIL so it can be used by yosys to synthesise a design.
+The IEEE1800 standard is open, and a collection of open-source tools have emerged that parse the language to provide several functions. To highlight a few; [Verilator](https://www.veripool.org/verilator/) parses the language to transform a design into C++ code, so that it may be compiled and run on a general purpose computer. [Slang](https://sv-lang.com/) offers functionality that parses the language into an abstract syntax tree (AST). [yosys-slang](https://github.com/povik/yosys-slang) uses slang to transform the AST into RTLIL so it can be used by [yosys](https://github.com/YosysHQ/yosys/) to synthesise a design.
 
 ## Current testing landscape
-As concluded before, a tool needs to be reliable. Tool developers address this by equipping their tools with test cases. Furthermore, the sv-tests project by the Chips Alliance intends to find all supported and missing SystemVerilog features in various Verilog tools.
+As concluded before, a tool needs to be reliable. Tool developers address this by equipping their tools with test cases. Furthermore, the [sv-tests](https://github.com/chipsalliance/sv-tests) project by the Chips Alliance intends to find all supported and missing SystemVerilog features in various Verilog tools.
 
-They have published a dashboard in which the current state of support for different Verilog/SystemVerilog features is shown.
+They have published a [dashboard](https://chipsalliance.github.io/sv-tests-results/) in which the current state of support for different Verilog/SystemVerilog features is shown.
 
 ## Problems with existing Test Coverage
 Though great work has been done by everyone involved to raise the quality of the tools, a number of problems exist:
@@ -64,9 +64,9 @@ As we will see, false positives can have more serious consequences.
 In this particular issue of yosys-slang, https://github.com/povik/yosys-slang/issues/77, a problem is described where intended use of the tool resulted in a false positive.
 A testcase was written that should have resulted in a failure, but instead resulted in a pass. The AST was converted to invalid RTLIL that failed to trigger an error and as a result, the test passed.
 
-According to the IEEE1800 standard, a simple_immediate_assert_statement embedded in an initial_construct was parsed erroneously.
+According to the IEEE1800 standard, a `simple_immediate_assert_statement` embedded in an `initial_construct` was parsed erroneously.
 
-The tool supports tests for assert in an assert_comb block, which is a simple_immediate_assert_statement in an always_construct.
+The tool supports tests for assert in an `assert_comb` block, which is a `simple_immediate_assert_statement` in an always_construct.
 
 False positives at this level are more dangerous. The assert statement is explicitly designed to test designs. A passing assert that should have failed leads
 to a corruption propagating through subsequent steps.
@@ -101,5 +101,4 @@ Concretely, the following approach will be explored:
 
 The repository can be found here: https://github.com/dehekkendekrekker/ieee1800-2023-tests/tree/master
 
-Daniel Attevelt
 

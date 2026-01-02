@@ -101,7 +101,7 @@ this could lead to very expensive problems. One of the industries where this is 
 </li>
 <li>
 <p>The dashboard of the sv-tests suite shows false positives. Some tools appear to pass tests, but upon closer inspection they do not.
-In this particular case, the worst scenario is likely a disappointed user that selected the tool based on the information the dashboard provided.</p>
+In these particular casex, the worst scenario is likely a disappointed user that selected the tool based on the information the dashboard provided.</p>
 </li>
 </ol>
 <p>
@@ -200,31 +200,33 @@ In this particular case, the worst scenario is likely a disappointed user that s
 <p>In this particular issue of yosys-slang, <a href="https://github.com/povik/yosys-slang/issues/77">https://github.com/povik/yosys-slang/issues/77</a>, a problem is described where intended use of the tool resulted in a false positive.
 A testcase was written that should have resulted in a failure, but instead resulted in a pass. The AST was converted to invalid RTLIL that failed to trigger an error and as a result, the test passed.</p>
 <p>According to the IEEE1800 standard, a <code>simple_immediate_assert_statement</code> embedded in an <code>initial_construct</code> was parsed erroneously.</p>
-<p>The tool supports tests for assert in an <code>assert_comb</code> block, which is a <code>simple_immediate_assert_statement</code> in an always_construct.</p>
+<p>The tool supports tests for assert in an <code>assert_comb</code> block, which is a <code>simple_immediate_assert_statement</code> in an <code>always_construct</code>.</p>
 <p>False positives at this level are more dangerous. The assert statement is explicitly designed to test designs. A passing assert that should have failed leads
 to a corruption propagating through subsequent steps.</p>
 <p>In this case, the first line of defense has failed. Unsupported language did not result in an error when used.</p>
+<p>The second line of defense has also failed. The sv-tests dashboard shows that for yosys-slang, the (16.2) assert test passes, but that is only half of the story. Even if the condition were false, the test would still pass.</p>
+<p>There should be a test that also verifies the negative. Ie, if a true statement cause the test to pass, a false statement should cause the test to fail.</p>
 <h2 id="the-context-problem">The context problem</h2>
-<p>However, the second line of defense has also failed. simple_immediate_assert_statements are part of chapter 16.3 of the IEEE1800 standard.
-sv-tests does not currently provide any tests for this language feature. This is an example that shows that gaps in test coverage fail to detect problems in tools, with dire consequences.</p>
-<p>However, there is another problem. As the yosys-slang issue revealed, language features do not occur in isolation. Merely testing whether an assert statement is parsed correctly is not enough. In this example, an assert statement in an initial block behaves differently from an assert statement in an always_comb block.</p>
+<p>However, there is another problem. As the yosys-slang issue revealed, language features do not occur in isolation. Merely testing whether an assert statement is parsed correctly is not enough. In this example, an <code>assert</code> statement in an <code>initial</code> block behaves differently from an assert statement in an <code>always_comb</code> block.</p>
 <p>A project like sv-tests, apart from its stated mission, should therefore also consider how the language features are tested in context.
-Failure to do so will lead, again, to false positives. Even if 16.3 contained a test for assert, if it does not take its context into account, it would appear that a tool passing the test supports the feature. This, however, would only be true in the tested case.</p>
+Failure to do so will lead to false positives, as demonstrated above.</p>
 <p>Summarizing, the following problems exist:</p>
 <ol>
-<li>The tool&rsquo;s own test suites do not always catch all problems, which could lead to false positives when used.</li>
-<li>The overarching test framework sv-tests contains gaps in its coverage of the IEEE1800 standard.</li>
+<li>The test coverage contains gaps</li>
 <li>Filling in these gaps depends on the community, which is slow and arbitrary.</li>
+<li>The tool&rsquo;s own test suites do not always catch all problems, which could lead to false positives when used.</li>
+<li>The overarching test framework sv-tests also contains false positives.</li>
 <li>Language features need to be tested in context.</li>
 </ol>
 <h2 id="proposed-approach">Proposed approach</h2>
-<p>In order to address these problems, a different way of generating test cases is required. Due to previous experience with fuzzing techniques to find bugs in software,the author will explore applying these techniques to test case generation.</p>
-<p>Concretely, the following approach will be explored:</p>
-<ol>
-<li>The IEEE1800-2023 grammar elements will be copied from the standard to a text format.</li>
-<li>A tool will be built that takes the BNF grammar and produces a graph that describes the standard.</li>
-<li>From this graph, meaningful paths will be extracted and converted to HDL test cases.</li>
-</ol>
+<p>In order to address these problems, a different way of generating test cases is required.
+Due to previous experience with fuzzing techniques to find bugs in software, the author will explore applying these techniques to test case generation.
+Applying these techniques would mean that a graph that describes the language is assembled.
+All possible permutations will be contained in this graph.
+Corrected for recursion and infinity, this hopefully yields a set of paths through the graphs that can be followed to generated valid test cases.
+Positive paths describe valid paths through the graph, and should pass.
+Negative paths describe invalid paths through the graph and should fail.
+This should take care of the gaps problem, the testing-in-context problem as well as the false positives problem.</p>
 <p>The repository can be found here: <a href="https://github.com/dehekkendekrekker/ieee1800-2023-tests/tree/master">https://github.com/dehekkendekrekker/ieee1800-2023-tests/tree/master</a></p>
 
     </div>

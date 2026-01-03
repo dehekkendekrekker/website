@@ -3,7 +3,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://dehekkendekrekker.nl/</loc>
-    <lastmod>2026-01-02T14:19:26+00:00</lastmod>
+    <lastmod>2026-01-03T14:49:11+00:00</lastmod>
+  </url><url>
+    <loc>http://dehekkendekrekker.nl/tags/ieee1800-2023-tests/</loc>
+    <lastmod>2026-01-03T14:49:11+00:00</lastmod>
+  </url><url>
+    <loc>http://dehekkendekrekker.nl/posts/</loc>
+    <lastmod>2026-01-03T14:49:11+00:00</lastmod>
+  </url><url>
+    <loc>http://dehekkendekrekker.nl/tags/</loc>
+    <lastmod>2026-01-03T14:49:11+00:00</lastmod>
+  </url><url>
+    <loc>http://dehekkendekrekker.nl/posts/2026-01-03-1/</loc>
+    <lastmod>2026-01-03T14:49:11+00:00</lastmod>
   </url><url>
     <loc>http://dehekkendekrekker.nl/projects/ieee1800-2023-tests/</loc>
     <lastmod>2026-01-02T14:19:26+00:00</lastmod>
@@ -12,9 +24,6 @@
     <lastmod>2026-01-02T14:19:26+00:00</lastmod>
   </url><url>
     <loc>http://dehekkendekrekker.nl/posts/2024-04-21-1/</loc>
-    <lastmod>2024-04-21T23:31:58+00:00</lastmod>
-  </url><url>
-    <loc>http://dehekkendekrekker.nl/posts/</loc>
     <lastmod>2024-04-21T23:31:58+00:00</lastmod>
   </url><url>
     <loc>http://dehekkendekrekker.nl/posts/2024-04-08-1/</loc>
@@ -48,7 +57,5 @@
     <lastmod>2023-07-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://dehekkendekrekker.nl/categories/</loc>
-  </url><url>
-    <loc>http://dehekkendekrekker.nl/tags/</loc>
   </url>
 </urlset>

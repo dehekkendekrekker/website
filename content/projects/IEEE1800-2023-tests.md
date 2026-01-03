@@ -4,6 +4,7 @@ summary = "A comprehensive test framework for SystemVerilog IEEE1800-2023"
 date = 2026-01-02T14:19:26Z
 draft = false
 author = "Daniel Attevelt"
+tags = ["ieee1800-2023-tests"]
 +++
 
 ## Introduction
